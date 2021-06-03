@@ -4,7 +4,7 @@ import axios from 'axios'
 const CommentCreate = ({postId}) => {
     const [content,setContent] = useState('')
     const createComment = async (content) => {
-        const url = `http://localhost:4001/posts/${postId}/comments`
+        const url = `http://posts.com/posts/${postId}/comments`
         const comments = await axios.post(url,{content})
         console.log(comments)
     }

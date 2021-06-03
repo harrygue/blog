@@ -10,7 +10,7 @@ const PostCreate = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-        const url = 'http://localhost:4000/posts'
+        const url = 'http://posts.com/posts/create'
         await axios.post(url,{title})
         setTitle('')
     }
