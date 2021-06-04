@@ -14,7 +14,7 @@ const PostList = () => {
         setPosts(response.data)
     }
 
-    useEffect(async () =>{
+    useEffect(() =>{
         fetchPosts()
     },[])
 
